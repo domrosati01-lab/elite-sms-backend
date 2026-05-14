@@ -7,7 +7,7 @@ app.use(express.json({ limit: '1mb' }));
 app.use(cors());
 
 const ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID || 'AC716cc3da6e7af65f21d0441e8861e4a0';
-const AUTH_TOKEN  = process.env.TWILIO_AUTH_TOKEN  || '93f9995e5184ac83be04b50f80b4c775';
+const AUTH_TOKEN  = process.env.TWILIO_AUTH_TOKEN  || 'b904beedbdb6e852d1625440c72b2e9f';
 const ALERT_TO    = process.env.ALERT_PHONE        || '+12039487692';
 
 const client = twilio(ACCOUNT_SID, AUTH_TOKEN);
