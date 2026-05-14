@@ -20,9 +20,8 @@ app.post('/send-sms', async (req, res) => {
 
     const message = await client.messages.create({
       body,
-      from: FROM_NUMBER,
-      to: ALERT_TO,
-    });
+      from: 'whatsapp:+14155238886',      
+      to: 'whatsapp:' + ALERT_TO,    });
 
     console.log(`[${new Date().toISOString()}] SMS sent — SID: ${message.sid}`);
     res.json({ ok: true, sid: message.sid });
